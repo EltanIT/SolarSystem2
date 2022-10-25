@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/solarSystem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/z"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitXY"
+        />
+
+    <Button
+        android:id="@+id/eightButton"
+        android:layout_width="67dp"
+        android:layout_height="210dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.36"
+        android:background="@drawable/forma"
+        android:onClick="eightOnClickPlanet"
+        />
+    <Button
+        android:id="@+id/marsButton"
+        android:layout_width="67dp"
+        android:layout_height="210dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.599"
+        android:background="@drawable/forma"
+        android:onClick="marsOnClickPlanet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/merkuriyButton"
+        android:layout_width="67dp"
+        android:layout_height="210dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.128"
+        android:background="@drawable/forma"
+        android:onClick="mercuriyOnClickPlanet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/veneraButton"
+        android:layout_width="67dp"
+        android:layout_height="215dp"
+        android:background="@drawable/forma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653"
+        android:onClick="veneraOnClickPlanet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/uranButton"
+        android:layout_width="67dp"
+        android:layout_height="200dp"
+        android:background="@drawable/forma"
+        android:onClick="uranOnClickPlanet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907" />
+
+    <Button
+        android:id="@+id/neptunButton"
+        android:layout_width="67dp"
+        android:layout_height="215dp"
+        android:background="@drawable/forma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968"
+        android:onClick="neptunOnClickPlanet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+
+        />
+
+    <Button
+        android:id="@+id/saturnButton"
+        android:layout_width="67dp"
+        android:layout_height="215dp"
+        android:background="@drawable/forma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744"
+        android:onClick="saturnOnClickPlanet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/upiterButton"
+        android:layout_width="67dp"
+        android:layout_height="215dp"
+        android:background="@drawable/forma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236"
+        android:onClick="upiterOnClickPlanet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <ImageButton
+        android:id="@+id/startMusic1"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="1"
+        android:src="@drawable/vkl_music"
+        android:scaleType="fitXY"
+        android:onClick="StartOrStopMusic"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/sunPlanetAc1"
+        android:layout_width="74dp"
+        android:layout_height="220dp"
+        android:background="@drawable/forma"
+        android:onClick="sunOnClickPlanet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+            android:id="@+id/textPlanetAc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/colorNull"
+
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
